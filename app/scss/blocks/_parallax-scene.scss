@@ -1,20 +1,26 @@
 .parallax-scene {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .parallax-scene__layer {
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.9;
+  width: 90vw;
+  height: 90vh;
+  opacity: 0.95;
   border-radius: 10px;
   color: transparent;
 
   &:nth-child(1) {
-    background: linear-gradient(to top, #36d1dc, #5b86e5);
+    margin-top: calc((100vh - 92vh) / 2);
+    margin-left: calc((100vw - 90vw) / 2);
+    background: linear-gradient(to top, #c9d6ff, #e2e2e2);
   }
 
   &:nth-child(2) {
-    background: linear-gradient(to bottom right, #ff512f, #dd2476);;
+    margin-top: calc((100vh - 89vh) / 2);
+    margin-left: calc((100vw - 89vw) / 2);
+    background: linear-gradient(to bottom right, #a1ffce, #faffd1);
   }
 }
