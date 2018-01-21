@@ -1,0 +1,12 @@
+.coming-soon-content {
+
+}
+
+.coming-soon-content__actions {
+  margin-top: 3vh;
+  text-align: center;
+
+  @include mq-min(500px) {
+    margin-top: 6vh;
+  }
+}

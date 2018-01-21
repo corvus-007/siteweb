@@ -1,0 +1,20 @@
+.parallax-scene {
+  position: absolute;
+  overflow: hidden;
+}
+
+.parallax-scene__layer {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+  border-radius: 10px;
+  color: transparent;
+
+  &:nth-child(1) {
+    background: linear-gradient(to top, #36d1dc, #5b86e5);
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(to bottom right, #ff512f, #dd2476);;
+  }
+}

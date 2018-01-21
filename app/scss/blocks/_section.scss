@@ -1,0 +1,29 @@
+.section {
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+}
+
+.section__header {
+  @include make-container();
+
+  margin-bottom: ($grid-gutter-width * 1.5);
+  text-align: center;
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: ($grid-gutter-width / 2);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: rem($font-size);
+  font-family: $secondary-font;
+}
+
+.section__body {
+
+}
+
+.section__footer {
+  text-align: center;
+  margin-top: $grid-gutter-width;
+}

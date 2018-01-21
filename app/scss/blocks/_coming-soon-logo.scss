@@ -1,0 +1,27 @@
+.coming-soon-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  line-height: 1.2;
+  font-family: $secondary-font;
+
+  @include mq-min(500px) {
+    margin-bottom: 5vh;
+    font-size: rem(20);
+  }
+}
+
+.coming-soon-logo__text {
+  font-size: rem(40);
+  font-weight: 700;
+  color: $accent-color;
+
+  @include mq-min(500px) {
+    font-size: rem(50);
+  }
+}
+
+.coming-soon-logo__slogan {
+
+}

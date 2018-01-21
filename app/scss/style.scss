@@ -1,0 +1,40 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "mixins-containers";
+
+// @import "normalize";
+
+// Global
+@import "global/fonts";
+// @import "global/grid";
+@import "global/base";
+@import "global/layout";
+
+// Vendors
+// @import "vendors/slick";
+@import "vendors/jquery.fancybox.min";
+
+// Blocks
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/table";
+@import "blocks/popup";
+@import "blocks/coming-soon";
+@import "blocks/coming-soon-header";
+@import "blocks/coming-soon-main";
+@import "blocks/coming-soon-logo";
+@import "blocks/coming-soon-content";
+@import "blocks/coming-soon-services";
+@import "blocks/section";
+@import "blocks/parallax-scene";
+// @import "blocks/custom-ol";
+// @import "blocks/custom-ul";
+// @import "blocks/main-header";
+// @import "blocks/main-nav";
+// @import "blocks/hamburger-menu";
+// @import "blocks/index-slider";
+// @import "blocks/page";
+// @import "blocks/archive-events";
+// @import "blocks/main-footer";
+// @import "blocks/socials";

@@ -1,0 +1,53 @@
+.coming-soon-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  // outline: 1px solid tomato;
+}
+
+.coming-soon-header__inner {
+
+}
+
+.coming-soon-header__contacts-items {
+  @include clear-list();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq-min(500px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-min(600px) {
+    justify-content: flex-end;
+  }
+}
+
+.coming-soon-header__contact {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: currentColor;
+  text-decoration: none;
+  transition: $duration;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq-min(500px) {
+    margin-right: 2rem;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.coming-soon-header__contact-icon {
+  fill: currentColor;
+  margin-right: 0.5rem;
+}

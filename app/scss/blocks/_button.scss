@@ -1,0 +1,45 @@
+@mixin make-button() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(260px);
+  padding: rem(16) rem(15);
+  text-align: center;
+  font-weight: 400;
+  font-size: rem(16);
+  font-family: $primary-font;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: normal;
+  outline: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: rem(40);
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
+  transition-property: background, color, border-color;
+  transition-duration: ($duration * 2);
+  cursor: pointer;
+}
+
+@mixin --button-filled() {
+  color: $white-color;
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    border-color: transparent;
+    background-color: mix(#fff, $accent-color, 15%);
+  }
+
+  &:active {
+    background-color: mix(#000, $accent-color, 15%);
+  }
+}
+
+.button {
+  @include make-button();
+  @include --button-filled();
+}
